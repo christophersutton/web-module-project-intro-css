@@ -1,0 +1,77 @@
+body {
+    text-align:center;
+}
+
+.container {
+    max-width:900px;
+    margin:0px auto;
+}
+
+nav {
+    display:flex;
+    justify-content:space-around;
+    margin:7%;
+}
+
+nav a, nav a:visited {
+    padding:20px;
+    border-radius:3px;
+    color:white;
+    text-decoration: none;
+}
+
+.plan {
+    background-color:orange;
+}
+
+.learn {
+    background-color:skyblue;
+}
+.volunteer {
+    background-color:gold;
+}
+
+header img {
+    border-radius:50%;
+    max-width:200px;
+}
+
+.row {
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.column {
+}
+
+footer {
+    background-color:tan;
+}
+
+footer img {
+    height:150px;
+}
+
+#history {
+    background-color:tan;
+    color:white;
+    padding:15px;
+    margin: 30px 0;
+}
+
+.info {
+    max-width:300px;
+    margin:0px auto;
+}
+
+.info img {
+    width:100px;
+}
+
+.footer-img {
+    background-image: url("assets/footer_img.jpg");
+    height: 200px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+}
