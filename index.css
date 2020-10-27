@@ -1,12 +1,28 @@
 body {
     text-align:center;
+    font-family: 'Roboto Mono', monospace;
+    line-height:1.4;
 }
+
+.bold {font-weight:700;}
 
 .container {
     max-width:900px;
     margin:0px auto;
 }
 
+.row {
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.column {
+}
+
+/**************/
+/* Nav Stuff */
+/**************/
 nav {
     display:flex;
     justify-content:space-around;
@@ -14,46 +30,56 @@ nav {
 }
 
 nav a, nav a:visited {
-    padding:20px;
-    border-radius:3px;
+    padding:10px 30px;
+    border-radius:10%;
     color:white;
     text-decoration: none;
 }
 
 .plan {
-    background-color:orange;
+    background-color:#FF764E;
 }
 
 .learn {
-    background-color:skyblue;
+    background-color:#5ED3EB;
 }
 .volunteer {
-    background-color:gold;
+    background-color:#FFCD69;
+}
+
+/***********/
+/* Header */
+/***********/
+.header-img {
+    flex-basis:30%;
+}
+
+.header-txt {
+    flex-basis: 70%;
 }
 
 header img {
     border-radius:50%;
-    max-width:200px;
+    width:90%;
 }
 
-.row {
-    display:flex;
-    justify-content:space-evenly;
+h1 {
+    font-family: 'Chelsea Market', cursive;
+    font-size:2.9rem;
 }
 
-.column {
+.header-txt p {
+    width:75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-footer {
-    background-color:tan;
-}
 
-footer img {
-    height:150px;
-}
-
+/***********/
+/* main content */
+/***********/
 #history {
-    background-color:tan;
+    background-color:#DDB9A3;
     color:white;
     padding:15px;
     margin: 30px 0;
@@ -61,17 +87,28 @@ footer img {
 
 .info {
     max-width:300px;
-    margin:0px auto;
+    margin:0px auto 2.5em;
+    font-size:.9rem;
 }
 
 .info img {
     width:100px;
 }
 
+/***********/
+/* Footer */
+/***********/
+footer {
+    background-color:#F9E7DC;
+    margin-top:5em;
+    padding-bottom:1%;
+}
+
 .footer-img {
     background-image: url("assets/footer_img.jpg");
     height: 200px; /* You must set a specified height */
-    background-position: center; /* Center the image */
+    background-position: center top; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; 
 }
+
